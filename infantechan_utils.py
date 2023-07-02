@@ -1,3 +1,4 @@
+"""仅供测试使用"""
 """
 拆分数据集
 将原始语料按照特定比例拆分成训练集、验证集、测试集(train.txt, dev.text, test.txt)
@@ -709,10 +710,6 @@ def data_enhance(data_path , enhance_rate_dict , save_path , stop_num = 200 , po
                     break
     power_num_dict = {cls:enable_power_num.count(str(cls)) for cls in data_describe_sorted}
     print(f'可增强语料个数：{power_num_dict}')
-
-
-
-
 
     for cls,power_num in enhance_rate_dict.items():
 
