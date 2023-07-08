@@ -1,0 +1,197 @@
+C:\Users\Infantechan\.conda\envs\torch_prj_env\python.exe C:/Users/Infantechan/Desktop/Chinese-Text-Classification-Pytorch-all/run.py --model=Transformer
+0it [00:00, ?it/s]Loading data...
+Vocab size: 4762
+16503it [00:05, 3155.45it/s]
+2060it [00:00, 3210.48it/s]
+2062it [00:00, 3274.95it/s]
+Time usage: 0:00:07
+<bound method Module.parameters of Model(
+  (embedding): Embedding(4762, 300)
+  (postion_embedding): Positional_Encoding(
+    (dropout): Dropout(p=0.4, inplace=False)
+  )
+  (encoder): Encoder(
+    (attention): Multi_Head_Attention(
+      (fc_Q): Linear(in_features=300, out_features=300, bias=True)
+      (fc_K): Linear(in_features=300, out_features=300, bias=True)
+      (fc_V): Linear(in_features=300, out_features=300, bias=True)
+      (attention): Scaled_Dot_Product_Attention()
+      (fc): Linear(in_features=300, out_features=300, bias=True)
+      (dropout): Dropout(p=0.4, inplace=False)
+      (layer_norm): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+    )
+    (feed_forward): Position_wise_Feed_Forward(
+      (fc1): Linear(in_features=300, out_features=1024, bias=True)
+      (fc2): Linear(in_features=1024, out_features=300, bias=True)
+      (dropout): Dropout(p=0.4, inplace=False)
+      (layer_norm): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+    )
+  )
+  (encoders): ModuleList(
+    (0): Encoder(
+      (attention): Multi_Head_Attention(
+        (fc_Q): Linear(in_features=300, out_features=300, bias=True)
+        (fc_K): Linear(in_features=300, out_features=300, bias=True)
+        (fc_V): Linear(in_features=300, out_features=300, bias=True)
+        (attention): Scaled_Dot_Product_Attention()
+        (fc): Linear(in_features=300, out_features=300, bias=True)
+        (dropout): Dropout(p=0.4, inplace=False)
+        (layer_norm): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+      )
+      (feed_forward): Position_wise_Feed_Forward(
+        (fc1): Linear(in_features=300, out_features=1024, bias=True)
+        (fc2): Linear(in_features=1024, out_features=300, bias=True)
+        (dropout): Dropout(p=0.4, inplace=False)
+        (layer_norm): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (1): Encoder(
+      (attention): Multi_Head_Attention(
+        (fc_Q): Linear(in_features=300, out_features=300, bias=True)
+        (fc_K): Linear(in_features=300, out_features=300, bias=True)
+        (fc_V): Linear(in_features=300, out_features=300, bias=True)
+        (attention): Scaled_Dot_Product_Attention()
+        (fc): Linear(in_features=300, out_features=300, bias=True)
+        (dropout): Dropout(p=0.4, inplace=False)
+        (layer_norm): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+      )
+      (feed_forward): Position_wise_Feed_Forward(
+        (fc1): Linear(in_features=300, out_features=1024, bias=True)
+        (fc2): Linear(in_features=1024, out_features=300, bias=True)
+        (dropout): Dropout(p=0.4, inplace=False)
+        (layer_norm): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (2): Encoder(
+      (attention): Multi_Head_Attention(
+        (fc_Q): Linear(in_features=300, out_features=300, bias=True)
+        (fc_K): Linear(in_features=300, out_features=300, bias=True)
+        (fc_V): Linear(in_features=300, out_features=300, bias=True)
+        (attention): Scaled_Dot_Product_Attention()
+        (fc): Linear(in_features=300, out_features=300, bias=True)
+        (dropout): Dropout(p=0.4, inplace=False)
+        (layer_norm): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+      )
+      (feed_forward): Position_wise_Feed_Forward(
+        (fc1): Linear(in_features=300, out_features=1024, bias=True)
+        (fc2): Linear(in_features=1024, out_features=300, bias=True)
+        (dropout): Dropout(p=0.4, inplace=False)
+        (layer_norm): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (3): Encoder(
+      (attention): Multi_Head_Attention(
+        (fc_Q): Linear(in_features=300, out_features=300, bias=True)
+        (fc_K): Linear(in_features=300, out_features=300, bias=True)
+        (fc_V): Linear(in_features=300, out_features=300, bias=True)
+        (attention): Scaled_Dot_Product_Attention()
+        (fc): Linear(in_features=300, out_features=300, bias=True)
+        (dropout): Dropout(p=0.4, inplace=False)
+        (layer_norm): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+      )
+      (feed_forward): Position_wise_Feed_Forward(
+        (fc1): Linear(in_features=300, out_features=1024, bias=True)
+        (fc2): Linear(in_features=1024, out_features=300, bias=True)
+        (dropout): Dropout(p=0.4, inplace=False)
+        (layer_norm): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (4): Encoder(
+      (attention): Multi_Head_Attention(
+        (fc_Q): Linear(in_features=300, out_features=300, bias=True)
+        (fc_K): Linear(in_features=300, out_features=300, bias=True)
+        (fc_V): Linear(in_features=300, out_features=300, bias=True)
+        (attention): Scaled_Dot_Product_Attention()
+        (fc): Linear(in_features=300, out_features=300, bias=True)
+        (dropout): Dropout(p=0.4, inplace=False)
+        (layer_norm): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+      )
+      (feed_forward): Position_wise_Feed_Forward(
+        (fc1): Linear(in_features=300, out_features=1024, bias=True)
+        (fc2): Linear(in_features=1024, out_features=300, bias=True)
+        (dropout): Dropout(p=0.4, inplace=False)
+        (layer_norm): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (5): Encoder(
+      (attention): Multi_Head_Attention(
+        (fc_Q): Linear(in_features=300, out_features=300, bias=True)
+        (fc_K): Linear(in_features=300, out_features=300, bias=True)
+        (fc_V): Linear(in_features=300, out_features=300, bias=True)
+        (attention): Scaled_Dot_Product_Attention()
+        (fc): Linear(in_features=300, out_features=300, bias=True)
+        (dropout): Dropout(p=0.4, inplace=False)
+        (layer_norm): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+      )
+      (feed_forward): Position_wise_Feed_Forward(
+        (fc1): Linear(in_features=300, out_features=1024, bias=True)
+        (fc2): Linear(in_features=1024, out_features=300, bias=True)
+        (dropout): Dropout(p=0.4, inplace=False)
+        (layer_norm): LayerNorm((300,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+  )
+  (fc1): Linear(in_features=307200, out_features=5, bias=True)
+)>
+  0%|          | 0/258 [00:00<?, ?it/s]Epoch [1/200]
+	Iter:      0,  Train Loss: 2.043,  Train Acc: 10.9375%,  Val Loss: 2.119,  Val Acc: 58.4951%,  Time: 0:00:11 *:   0%|          | 1/258 [00:11<47:15, 11.03s/it]	Iter:      0,  Train Loss: 2.043,  Train Acc: 10.9375%,  Val Loss: 2.119,  Val Acc: 58.4951%,  Time: 0:00:11 *
+	Iter:    100,  Train Loss: 0.9904,  Train Acc: 60.9375%,  Val Loss: 1.276,  Val Acc: 58.4951%,  Time: 0:01:29 *:  39%|███▉      | 101/258 [01:28<07:57,  3.04s/it]	Iter:    100,  Train Loss: 0.9904,  Train Acc: 60.9375%,  Val Loss: 1.276,  Val Acc: 58.4951%,  Time: 0:01:29 *
+	Iter:    200,  Train Loss: 1.046,  Train Acc: 46.8750%,  Val Loss: 1.262,  Val Acc: 58.0097%,  Time: 0:02:47 *:  78%|███████▊  | 201/258 [02:47<02:53,  3.05s/it]	Iter:    200,  Train Loss: 1.046,  Train Acc: 46.8750%,  Val Loss: 1.262,  Val Acc: 58.0097%,  Time: 0:02:47 *
+	Iter:    200,  Train Loss: 1.046,  Train Acc: 46.8750%,  Val Loss: 1.262,  Val Acc: 58.0097%,  Time: 0:02:47 *: 100%|██████████| 258/258 [03:30<00:00,  1.23it/s]
+Epoch [2/200]
+	Iter:    300,  Train Loss: 1.268,  Train Acc: 53.1250%,  Val Loss: 1.194,  Val Acc: 58.1068%,  Time: 0:04:11 *:  17%|█▋        | 43/258 [00:41<10:50,  3.03s/it]	Iter:    300,  Train Loss: 1.268,  Train Acc: 53.1250%,  Val Loss: 1.194,  Val Acc: 58.1068%,  Time: 0:04:11 *
+	Iter:    400,  Train Loss: 0.9596,  Train Acc: 60.9375%,  Val Loss:  1.24,  Val Acc: 58.7864%,  Time: 0:05:29 :  55%|█████▌    | 143/258 [01:58<05:45,  3.00s/it]	Iter:    400,  Train Loss: 0.9596,  Train Acc: 60.9375%,  Val Loss:  1.24,  Val Acc: 58.7864%,  Time: 0:05:29 
+	Iter:    500,  Train Loss: 1.582,  Train Acc: 35.9375%,  Val Loss: 1.188,  Val Acc: 57.9126%,  Time: 0:06:47 *:  94%|█████████▍| 243/258 [03:16<00:45,  3.03s/it]	Iter:    500,  Train Loss: 1.582,  Train Acc: 35.9375%,  Val Loss: 1.188,  Val Acc: 57.9126%,  Time: 0:06:47 *
+	Iter:    500,  Train Loss: 1.582,  Train Acc: 35.9375%,  Val Loss: 1.188,  Val Acc: 57.9126%,  Time: 0:06:47 *: 100%|██████████| 258/258 [03:27<00:00,  1.24it/s]
+Epoch [3/200]
+	Iter:    600,  Train Loss: 1.259,  Train Acc: 54.6875%,  Val Loss: 1.259,  Val Acc: 57.4757%,  Time: 0:08:05 :  33%|███▎      | 85/258 [01:07<08:39,  3.00s/it]	Iter:    600,  Train Loss: 1.259,  Train Acc: 54.6875%,  Val Loss: 1.259,  Val Acc: 57.4757%,  Time: 0:08:05 
+	Iter:    700,  Train Loss: 1.137,  Train Acc: 42.1875%,  Val Loss: 1.146,  Val Acc: 53.0583%,  Time: 0:09:23 *:  72%|███████▏  | 185/258 [02:25<03:41,  3.03s/it]	Iter:    700,  Train Loss: 1.137,  Train Acc: 42.1875%,  Val Loss: 1.146,  Val Acc: 53.0583%,  Time: 0:09:23 *
+	Iter:    700,  Train Loss: 1.137,  Train Acc: 42.1875%,  Val Loss: 1.146,  Val Acc: 53.0583%,  Time: 0:09:23 *: 100%|██████████| 258/258 [03:16<00:00,  1.31it/s]
+  0%|          | 0/258 [00:00<?, ?it/s]Epoch [4/200]
+	Iter:    800,  Train Loss: 1.311,  Train Acc: 42.1875%,  Val Loss: 1.313,  Val Acc: 40.1942%,  Time: 0:10:41 :  10%|█         | 27/258 [00:26<11:33,  3.00s/it]	Iter:    800,  Train Loss: 1.311,  Train Acc: 42.1875%,  Val Loss: 1.313,  Val Acc: 40.1942%,  Time: 0:10:41 
+	Iter:    900,  Train Loss: 1.013,  Train Acc: 67.1875%,  Val Loss: 1.252,  Val Acc: 59.2233%,  Time: 0:11:59 :  49%|████▉     | 127/258 [01:44<06:33,  3.01s/it]	Iter:    900,  Train Loss: 1.013,  Train Acc: 67.1875%,  Val Loss: 1.252,  Val Acc: 59.2233%,  Time: 0:11:59 
+	Iter:   1000,  Train Loss: 1.066,  Train Acc: 56.2500%,  Val Loss: 1.187,  Val Acc: 58.8350%,  Time: 0:13:17 :  88%|████████▊ | 227/258 [03:02<01:33,  3.01s/it]	Iter:   1000,  Train Loss: 1.066,  Train Acc: 56.2500%,  Val Loss: 1.187,  Val Acc: 58.8350%,  Time: 0:13:17 
+	Iter:   1000,  Train Loss: 1.066,  Train Acc: 56.2500%,  Val Loss: 1.187,  Val Acc: 58.8350%,  Time: 0:13:17 : 100%|██████████| 258/258 [03:24<00:00,  1.26it/s]
+  0%|          | 0/258 [00:00<?, ?it/s]Epoch [5/200]
+	Iter:   1100,  Train Loss: 0.957,  Train Acc: 68.7500%,  Val Loss: 1.384,  Val Acc: 58.5922%,  Time: 0:14:34 :  27%|██▋       | 69/258 [00:56<09:27,  3.00s/it]	Iter:   1100,  Train Loss: 0.957,  Train Acc: 68.7500%,  Val Loss: 1.384,  Val Acc: 58.5922%,  Time: 0:14:34 
+	Iter:   1200,  Train Loss: 1.008,  Train Acc: 59.3750%,  Val Loss: 1.194,  Val Acc: 59.7087%,  Time: 0:15:52 :  66%|██████▌   | 169/258 [02:14<04:27,  3.00s/it]	Iter:   1200,  Train Loss: 1.008,  Train Acc: 59.3750%,  Val Loss: 1.194,  Val Acc: 59.7087%,  Time: 0:15:52 
+	Iter:   1200,  Train Loss: 1.008,  Train Acc: 59.3750%,  Val Loss: 1.194,  Val Acc: 59.7087%,  Time: 0:15:52 : 100%|██████████| 258/258 [03:16<00:00,  1.31it/s]
+  0%|          | 0/258 [00:00<?, ?it/s]Epoch [6/200]
+	Iter:   1300,  Train Loss: 1.035,  Train Acc: 65.6250%,  Val Loss: 1.241,  Val Acc: 59.6117%,  Time: 0:17:10 :   4%|▍         | 11/258 [00:15<12:33,  3.05s/it]	Iter:   1300,  Train Loss: 1.035,  Train Acc: 65.6250%,  Val Loss: 1.241,  Val Acc: 59.6117%,  Time: 0:17:10 
+	Iter:   1400,  Train Loss:  1.13,  Train Acc: 57.8125%,  Val Loss: 1.304,  Val Acc: 59.4660%,  Time: 0:18:29 :  43%|████▎     | 111/258 [01:34<08:20,  3.40s/it]	Iter:   1400,  Train Loss:  1.13,  Train Acc: 57.8125%,  Val Loss: 1.304,  Val Acc: 59.4660%,  Time: 0:18:29 
+	Iter:   1500,  Train Loss: 1.128,  Train Acc: 59.3750%,  Val Loss:  1.37,  Val Acc: 59.3689%,  Time: 0:19:48 :  82%|████████▏ | 211/258 [02:53<02:22,  3.04s/it]	Iter:   1500,  Train Loss: 1.128,  Train Acc: 59.3750%,  Val Loss:  1.37,  Val Acc: 59.3689%,  Time: 0:19:48 
+	Iter:   1500,  Train Loss: 1.128,  Train Acc: 59.3750%,  Val Loss:  1.37,  Val Acc: 59.3689%,  Time: 0:19:48 : 100%|██████████| 258/258 [03:26<00:00,  1.25it/s]
+  0%|          | 0/258 [00:00<?, ?it/s]Epoch [7/200]
+	Iter:   1600,  Train Loss: 1.207,  Train Acc: 50.0000%,  Val Loss: 1.193,  Val Acc: 54.9029%,  Time: 0:21:07 :  21%|██        | 53/258 [00:45<10:21,  3.03s/it]	Iter:   1600,  Train Loss: 1.207,  Train Acc: 50.0000%,  Val Loss: 1.193,  Val Acc: 54.9029%,  Time: 0:21:07 
+	Iter:   1700,  Train Loss: 1.112,  Train Acc: 57.8125%,  Val Loss: 1.293,  Val Acc: 59.6602%,  Time: 0:22:30 :  59%|█████▉    | 152/258 [02:08<01:29,  1.18it/s]
+	Iter:   1700,  Train Loss: 1.112,  Train Acc: 57.8125%,  Val Loss: 1.293,  Val Acc: 59.6602%,  Time: 0:22:30 
+No optimization for a long time, auto-stopping...
+C:\Users\Infantechan\.conda\envs\torch_prj_env\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Infantechan\.conda\envs\torch_prj_env\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Infantechan\.conda\envs\torch_prj_env\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Test Loss:   1.1,  Test Acc: 54.95%
+Precision, Recall and F1-Score...
+              precision    recall  f1-score   support
+
+        一般不满     0.5111    0.2396    0.3262        96
+        比较不满     0.3757    0.5226    0.4372       486
+   非常不满-渠道敏感     0.6839    0.6783    0.6811      1206
+   非常不满-费用敏感     0.0000    0.0000    0.0000       108
+   非常不满-服务敏感     0.2621    0.2289    0.2444       166
+
+    accuracy                         0.5495      2062
+   macro avg     0.3666    0.3339    0.3378      2062
+weighted avg     0.5335    0.5495    0.5363      2062
+
+Confusion Matrix...
+[[ 23  42  31   0   0]
+ [  7 254 209   0  16]
+ [ 14 288 818   0  86]
+ [  0  35  68   0   5]
+ [  1  57  70   0  38]]
+Time usage: 0:00:09
+
+Process finished with exit code 0

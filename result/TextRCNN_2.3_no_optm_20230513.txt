@@ -1,0 +1,115 @@
+C:\Users\Infantechan\.conda\envs\torch_prj_env\python.exe C:/Users/Infantechan/Desktop/Chinese-Text-Classification-Pytorch-all/run.py --model=TextRCNN
+0it [00:00, ?it/s]Loading data...
+Vocab size: 4762
+44065it [00:13, 3351.34it/s]
+2060it [00:00, 3378.92it/s]
+2062it [00:00, 3479.23it/s]
+C:\Users\Infantechan\.conda\envs\torch_prj_env\lib\site-packages\torch\nn\modules\rnn.py:67: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.6 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+Time usage: 0:00:14
+<bound method Module.parameters of Model(
+  (embedding): Embedding(4762, 300)
+  (lstm): LSTM(300, 384, batch_first=True, dropout=0.6, bidirectional=True)
+  (maxpool): MaxPool1d(kernel_size=1024, stride=1024, padding=0, dilation=1, ceil_mode=False)
+  (fc): Linear(in_features=1068, out_features=5, bias=True)
+)>
+C:\Users\Infantechan\.conda\envs\torch_prj_env\lib\site-packages\transformers\optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|          | 0/345 [00:00<?, ?it/s]Epoch [1/200]
+  0%|          | 1/345 [00:03<17:35,  3.07s/it]
+Iter:      0,  Train Loss: 1.725,  Train Acc: 17.1875%,  Val Loss: 1.566,  Val Acc: 14.4660%,  Time: 0:00:03 *
+ 29%|██▉       | 101/345 [00:40<04:05,  1.01s/it]
+Iter:    100,  Train Loss: 0.8523,  Train Acc: 67.9688%,  Val Loss: 0.7784,  Val Acc: 72.1359%,  Time: 0:00:41 *
+ 58%|█████▊    | 201/345 [01:18<02:24,  1.00s/it]
+Iter:    200,  Train Loss: 0.7592,  Train Acc: 72.6562%,  Val Loss: 0.566,  Val Acc: 78.6408%,  Time: 0:01:19 *
+ 87%|████████▋ | 301/345 [01:56<00:45,  1.04s/it]
+Iter:    300,  Train Loss: 0.4248,  Train Acc: 85.9375%,  Val Loss: 0.5122,  Val Acc: 80.2913%,  Time: 0:01:57 *
+100%|██████████| 345/345 [02:12<00:00,  2.61it/s]
+  0%|          | 0/345 [00:00<?, ?it/s]Epoch [2/200]
+ 16%|█▌        | 56/345 [00:22<04:50,  1.01s/it]
+Iter:    400,  Train Loss: 0.2589,  Train Acc: 93.7500%,  Val Loss: 0.4553,  Val Acc: 83.0583%,  Time: 0:02:34 *
+ 45%|████▌     | 156/345 [00:59<03:09,  1.00s/it]
+Iter:    500,  Train Loss: 0.2403,  Train Acc: 93.7500%,  Val Loss: 0.402,  Val Acc: 85.0971%,  Time: 0:03:12 *
+ 74%|███████▍  | 256/345 [01:37<01:28,  1.00it/s]
+Iter:    600,  Train Loss: 0.1897,  Train Acc: 92.9688%,  Val Loss: 0.4063,  Val Acc: 85.8738%,  Time: 0:03:50 
+100%|██████████| 345/345 [02:09<00:00,  2.67it/s]
+  0%|          | 0/345 [00:00<?, ?it/s]Epoch [3/200]
+  3%|▎         | 11/345 [00:06<05:37,  1.01s/it]
+Iter:    700,  Train Loss: 0.08014,  Train Acc: 97.6562%,  Val Loss: 0.4369,  Val Acc: 84.3689%,  Time: 0:04:28 
+ 32%|███▏      | 111/345 [00:43<03:56,  1.01s/it]
+Iter:    800,  Train Loss: 0.1533,  Train Acc: 96.0938%,  Val Loss: 0.354,  Val Acc: 87.1359%,  Time: 0:05:05 *
+ 61%|██████    | 211/345 [01:21<02:14,  1.00s/it]
+Iter:    900,  Train Loss: 0.09545,  Train Acc: 96.8750%,  Val Loss: 0.347,  Val Acc: 88.8835%,  Time: 0:05:43 *
+ 90%|█████████ | 311/345 [01:59<00:35,  1.04s/it]
+Iter:   1000,  Train Loss: 0.1169,  Train Acc: 96.8750%,  Val Loss: 0.342,  Val Acc: 89.0291%,  Time: 0:06:21 *
+100%|██████████| 345/345 [02:11<00:00,  2.63it/s]
+  0%|          | 0/345 [00:00<?, ?it/s]Epoch [4/200]
+ 19%|█▉        | 66/345 [00:25<04:40,  1.01s/it]
+Iter:   1100,  Train Loss: 0.1035,  Train Acc: 97.6562%,  Val Loss: 0.3297,  Val Acc: 90.1456%,  Time: 0:06:59 *
+ 48%|████▊     | 166/345 [01:03<02:59,  1.00s/it]
+Iter:   1200,  Train Loss: 0.07179,  Train Acc: 98.4375%,  Val Loss: 0.3302,  Val Acc: 89.6602%,  Time: 0:07:36 
+ 77%|███████▋  | 266/345 [01:41<01:19,  1.00s/it]
+Iter:   1300,  Train Loss: 0.1126,  Train Acc: 96.0938%,  Val Loss: 0.3277,  Val Acc: 89.1748%,  Time: 0:08:14 *
+100%|██████████| 345/345 [02:09<00:00,  2.67it/s]
+  0%|          | 0/345 [00:00<?, ?it/s]Epoch [5/200]
+  6%|▌         | 21/345 [00:09<05:27,  1.01s/it]
+Iter:   1400,  Train Loss: 0.07649,  Train Acc: 97.6562%,  Val Loss: 0.3427,  Val Acc: 89.3689%,  Time: 0:08:52 
+ 35%|███▌      | 121/345 [00:47<03:43,  1.00it/s]
+Iter:   1500,  Train Loss: 0.1903,  Train Acc: 95.3125%,  Val Loss: 0.374,  Val Acc: 88.3495%,  Time: 0:09:29 
+ 64%|██████▍   | 221/345 [01:25<02:04,  1.00s/it]
+Iter:   1600,  Train Loss: 0.07903,  Train Acc: 97.6562%,  Val Loss: 0.3148,  Val Acc: 90.3883%,  Time: 0:10:07 *
+ 93%|█████████▎| 321/345 [02:03<00:24,  1.02s/it]
+Iter:   1700,  Train Loss: 0.08827,  Train Acc: 96.8750%,  Val Loss: 0.3135,  Val Acc: 90.0971%,  Time: 0:10:45 *
+100%|██████████| 345/345 [02:11<00:00,  2.62it/s]
+Epoch [6/200]
+ 22%|██▏       | 76/345 [00:29<04:27,  1.01it/s]
+Iter:   1800,  Train Loss: 0.135,  Train Acc: 96.0938%,  Val Loss: 0.3249,  Val Acc: 90.3883%,  Time: 0:11:23 
+ 51%|█████     | 176/345 [01:06<02:48,  1.00it/s]
+Iter:   1900,  Train Loss: 0.04092,  Train Acc: 98.4375%,  Val Loss: 0.3532,  Val Acc: 89.8058%,  Time: 0:12:00 
+ 80%|████████  | 276/345 [01:44<01:08,  1.00it/s]
+Iter:   2000,  Train Loss: 0.03648,  Train Acc: 99.2188%,  Val Loss: 0.3216,  Val Acc: 90.0485%,  Time: 0:12:38 
+100%|██████████| 345/345 [02:09<00:00,  2.67it/s]
+Epoch [7/200]
+  9%|▉         | 31/345 [00:13<05:18,  1.01s/it]
+Iter:   2100,  Train Loss: 0.01458,  Train Acc: 100.0000%,  Val Loss: 0.3877,  Val Acc: 88.6893%,  Time: 0:13:16 
+ 38%|███▊      | 131/345 [00:50<03:33,  1.00it/s]
+Iter:   2200,  Train Loss: 0.1194,  Train Acc: 96.0938%,  Val Loss: 0.3386,  Val Acc: 90.0971%,  Time: 0:13:54 
+ 67%|██████▋   | 231/345 [01:28<01:54,  1.00s/it]
+Iter:   2300,  Train Loss: 0.04018,  Train Acc: 98.4375%,  Val Loss: 0.3441,  Val Acc: 89.8058%,  Time: 0:14:31 
+ 96%|█████████▌| 331/345 [02:06<00:14,  1.00s/it]
+Iter:   2400,  Train Loss: 0.0225,  Train Acc: 100.0000%,  Val Loss: 0.4481,  Val Acc: 88.2039%,  Time: 0:15:09 
+100%|██████████| 345/345 [02:11<00:00,  2.63it/s]
+  0%|          | 0/345 [00:00<?, ?it/s]Epoch [8/200]
+ 25%|██▍       | 86/345 [00:32<04:18,  1.00it/s]
+Iter:   2500,  Train Loss: 0.03849,  Train Acc: 99.2188%,  Val Loss: 0.3382,  Val Acc: 90.1456%,  Time: 0:15:46 
+ 54%|█████▍    | 186/345 [01:10<02:39,  1.01s/it]
+Iter:   2600,  Train Loss: 0.0614,  Train Acc: 98.4375%,  Val Loss: 0.3522,  Val Acc: 90.2913%,  Time: 0:16:24 
+ 83%|████████▎ | 285/345 [01:47<00:22,  2.64it/s]
+
+Iter:   2700,  Train Loss: 0.03292,  Train Acc: 99.2188%,  Val Loss: 0.3666,  Val Acc: 89.2233%,  Time: 0:17:02 
+No optimization for a long time, auto-stopping...
+Test Loss:  0.33,  Test Acc: 90.11%
+Precision, Recall and F1-Score...
+              precision    recall  f1-score   support
+
+        一般不满     0.7111    0.6667    0.6882        96
+        比较不满     0.8481    0.8272    0.8375       486
+   非常不满-渠道敏感     0.9876    0.9900    0.9888      1206
+   非常不满-费用敏感     0.6967    0.7870    0.7391       108
+   非常不满-服务敏感     0.6766    0.6807    0.6787       166
+
+    accuracy                         0.9011      2062
+   macro avg     0.7840    0.7903    0.7865      2062
+weighted avg     0.9016    0.9011    0.9011      2062
+
+Confusion Matrix...
+[[  64   21    0    2    9]
+ [  19  402    8   22   35]
+ [   0    3 1194    1    8]
+ [   1   18    2   85    2]
+ [   6   30    5   12  113]]
+Time usage: 0:00:02
+[W CUDAGuardImpl.h:46] Warning: CUDA warning: driver shutting down (function uncheckedGetDevice)
+[W CUDAGuardImpl.h:62] Warning: CUDA warning: driver shutting down (function uncheckedSetDevice)
+
+Process finished with exit code 0

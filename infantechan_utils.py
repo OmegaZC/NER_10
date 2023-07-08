@@ -15,6 +15,8 @@ import os
 import numpy as np
 
 
+
+
 def split_data(data_path, split_rate, save_path=None):
     data_path = os.path.join(os.getcwd(), data_path)
     if save_path is not None: save_path = os.path.join(os.getcwd(), save_path)

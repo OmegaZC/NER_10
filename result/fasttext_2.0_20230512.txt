@@ -1,0 +1,289 @@
+C:\Users\Infantechan\.conda\envs\torch_prj_env\python.exe C:/Users/Infantechan/Desktop/Chinese-Text-Classification-Pytorch-all/run.py --model=FastText
+0it [00:00, ?it/s]Loading data...
+Vocab size: 4762
+39276it [01:01, 638.46it/s]
+2060it [00:03, 658.10it/s]
+2062it [00:03, 658.74it/s]
+Time usage: 0:01:08
+C:\Users\Infantechan\.conda\envs\torch_prj_env\lib\site-packages\transformers\optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+<bound method Module.parameters of Model(
+  (embedding): Embedding(4762, 300, padding_idx=4761)
+  (embedding_ngram2): Embedding(250499, 300)
+  (embedding_ngram3): Embedding(250499, 300)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (fc1): Linear(in_features=900, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=5, bias=True)
+)>
+C:\Users\Infantechan\.conda\envs\torch_prj_env\lib\site-packages\torch\optim\lr_scheduler.py:138: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+  0%|          | 0/307 [00:00<?, ?it/s]Epoch [1/200]
+  0%|          | 1/307 [00:02<13:07,  2.57s/it]
+Iter:      0,  Train Loss: 1.924,  Train Acc: 19.5312%,  Val Loss: 1.512,  Val Acc: 38.5437%,  Time: 0:00:03 *
+ 33%|███▎      | 101/307 [00:07<00:17, 11.96it/s]
+Iter:    100,  Train Loss: 1.565,  Train Acc: 24.2188%,  Val Loss: 1.529,  Val Acc: 27.9126%,  Time: 0:00:08 
+ 65%|██████▌   | 201/307 [00:13<00:10, 10.28it/s]
+Iter:    200,  Train Loss: 1.581,  Train Acc: 29.6875%,  Val Loss:  1.58,  Val Acc: 15.5340%,  Time: 0:00:13 
+ 98%|█████████▊| 300/307 [00:18<00:00, 19.92it/s]
+Iter:    300,  Train Loss: 1.432,  Train Acc: 39.8438%,  Val Loss: 1.583,  Val Acc: 20.3398%,  Time: 0:00:19 
+100%|██████████| 307/307 [00:18<00:00, 16.21it/s]
+  0%|          | 0/307 [00:00<?, ?it/s]Epoch [2/200]
+ 31%|███       | 94/307 [00:06<00:52,  4.07it/s]
+Iter:    400,  Train Loss: 1.369,  Train Acc: 38.2812%,  Val Loss: 1.465,  Val Acc: 26.4563%,  Time: 0:00:25 *
+ 64%|██████▎   | 195/307 [00:13<00:28,  3.97it/s]
+Iter:    500,  Train Loss: 1.338,  Train Acc: 43.7500%,  Val Loss: 1.458,  Val Acc: 26.7476%,  Time: 0:00:32 *
+ 96%|█████████▌| 294/307 [00:19<00:02,  4.51it/s]
+Iter:    600,  Train Loss: 1.306,  Train Acc: 45.3125%,  Val Loss: 1.312,  Val Acc: 43.7864%,  Time: 0:00:39 *
+100%|██████████| 307/307 [00:20<00:00, 15.10it/s]
+  0%|          | 0/307 [00:00<?, ?it/s]Epoch [3/200]
+ 28%|██▊       | 86/307 [00:04<00:11, 19.76it/s]
+Iter:    700,  Train Loss: 1.251,  Train Acc: 44.5312%,  Val Loss: 1.395,  Val Acc: 37.1359%,  Time: 0:00:44 
+ 61%|██████    | 186/307 [00:09<00:06, 19.80it/s]
+Iter:    800,  Train Loss: 1.317,  Train Acc: 40.6250%,  Val Loss: 1.362,  Val Acc: 35.6311%,  Time: 0:00:49 
+ 93%|█████████▎| 287/307 [00:15<00:01, 11.46it/s]
+Iter:    900,  Train Loss: 1.288,  Train Acc: 46.8750%,  Val Loss: 1.318,  Val Acc: 39.4660%,  Time: 0:00:55 
+100%|██████████| 307/307 [00:16<00:00, 18.86it/s]
+Epoch [4/200]
+ 26%|██▌       | 79/307 [00:03<00:11, 19.96it/s]
+Iter:   1000,  Train Loss: 1.218,  Train Acc: 50.7812%,  Val Loss:  1.18,  Val Acc: 54.7573%,  Time: 0:01:01 *
+ 59%|█████▊    | 180/307 [00:10<00:10, 11.95it/s]
+Iter:   1100,  Train Loss: 1.087,  Train Acc: 53.9062%,  Val Loss: 1.284,  Val Acc: 38.1553%,  Time: 0:01:07 
+ 91%|█████████ | 280/307 [00:16<00:02, 12.27it/s]
+Iter:   1200,  Train Loss: 1.137,  Train Acc: 53.1250%,  Val Loss: 1.336,  Val Acc: 37.5728%,  Time: 0:01:12 
+100%|██████████| 307/307 [00:17<00:00, 17.44it/s]
+Epoch [5/200]
+ 23%|██▎       | 72/307 [00:03<00:11, 20.07it/s]
+Iter:   1300,  Train Loss: 1.159,  Train Acc: 47.6562%,  Val Loss:  1.29,  Val Acc: 42.0874%,  Time: 0:01:17 
+ 56%|█████▌    | 172/307 [00:08<00:06, 19.69it/s]
+Iter:   1400,  Train Loss: 1.104,  Train Acc: 59.3750%,  Val Loss: 1.167,  Val Acc: 52.7670%,  Time: 0:01:24 *
+ 89%|████████▉ | 273/307 [00:16<00:03, 10.81it/s]
+Iter:   1500,  Train Loss: 1.121,  Train Acc: 50.0000%,  Val Loss: 1.189,  Val Acc: 50.9223%,  Time: 0:01:29 
+100%|██████████| 307/307 [00:17<00:00, 17.35it/s]
+  0%|          | 0/307 [00:00<?, ?it/s]Epoch [6/200]
+ 22%|██▏       | 67/307 [00:04<00:52,  4.60it/s]
+Iter:   1600,  Train Loss: 1.194,  Train Acc: 46.8750%,  Val Loss: 1.136,  Val Acc: 55.4369%,  Time: 0:01:36 *
+ 54%|█████▍    | 166/307 [00:10<00:11, 12.41it/s]
+Iter:   1700,  Train Loss: 1.091,  Train Acc: 58.5938%,  Val Loss: 1.228,  Val Acc: 46.9903%,  Time: 0:01:41 
+ 87%|████████▋ | 266/307 [00:16<00:10,  4.04it/s]
+Iter:   1800,  Train Loss: 1.132,  Train Acc: 52.3438%,  Val Loss: 1.108,  Val Acc: 56.7476%,  Time: 0:01:48 *
+100%|██████████| 307/307 [00:18<00:00, 16.23it/s]
+  0%|          | 0/307 [00:00<?, ?it/s]Epoch [7/200]
+ 19%|█▉        | 59/307 [00:03<00:21, 11.35it/s]
+Iter:   1900,  Train Loss: 0.9466,  Train Acc: 63.2812%,  Val Loss: 1.217,  Val Acc: 46.8447%,  Time: 0:01:53 
+ 51%|█████▏    | 158/307 [00:08<00:07, 19.83it/s]
+Iter:   2000,  Train Loss: 1.024,  Train Acc: 60.9375%,  Val Loss: 1.085,  Val Acc: 57.8155%,  Time: 0:02:00 *
+ 84%|████████▍ | 258/307 [00:14<00:02, 19.97it/s]
+Iter:   2100,  Train Loss: 1.046,  Train Acc: 57.0312%,  Val Loss:  1.18,  Val Acc: 50.3398%,  Time: 0:02:05 
+100%|██████████| 307/307 [00:17<00:00, 17.47it/s]
+Epoch [8/200]
+ 17%|█▋        | 51/307 [00:02<00:12, 20.20it/s]
+Iter:   2200,  Train Loss: 1.097,  Train Acc: 58.5938%,  Val Loss: 1.057,  Val Acc: 59.6117%,  Time: 0:02:12 *
+ 49%|████▉     | 150/307 [00:09<00:07, 20.07it/s]
+Iter:   2300,  Train Loss: 1.006,  Train Acc: 58.5938%,  Val Loss: 1.132,  Val Acc: 54.4175%,  Time: 0:02:17 
+ 82%|████████▏ | 253/307 [00:14<00:04, 12.65it/s]
+Iter:   2400,  Train Loss: 0.9538,  Train Acc: 56.2500%,  Val Loss: 1.101,  Val Acc: 55.9709%,  Time: 0:02:22 
+100%|██████████| 307/307 [00:17<00:00, 17.43it/s]
+Epoch [9/200]
+ 14%|█▍        | 44/307 [00:02<00:13, 19.90it/s]
+Iter:   2500,  Train Loss: 0.8812,  Train Acc: 60.9375%,  Val Loss: 1.185,  Val Acc: 49.4175%,  Time: 0:02:28 
+ 47%|████▋     | 145/307 [00:09<00:41,  3.88it/s]
+Iter:   2600,  Train Loss: 0.9881,  Train Acc: 66.4062%,  Val Loss: 1.049,  Val Acc: 59.4175%,  Time: 0:02:34 *
+ 79%|███████▉  | 244/307 [00:14<00:03, 19.96it/s]
+Iter:   2700,  Train Loss: 0.8779,  Train Acc: 63.2812%,  Val Loss: 1.013,  Val Acc: 62.4272%,  Time: 0:02:41 *
+100%|██████████| 307/307 [00:19<00:00, 16.15it/s]
+Epoch [10/200]
+ 12%|█▏        | 38/307 [00:03<01:00,  4.42it/s]
+Iter:   2800,  Train Loss: 0.8923,  Train Acc: 67.1875%,  Val Loss: 0.9827,  Val Acc: 63.3981%,  Time: 0:02:47 *
+ 45%|████▍     | 138/307 [00:08<00:14, 11.37it/s]
+Iter:   2900,  Train Loss: 0.8883,  Train Acc: 65.6250%,  Val Loss: 1.025,  Val Acc: 60.4854%,  Time: 0:02:53 
+ 78%|███████▊  | 238/307 [00:14<00:05, 11.83it/s]
+Iter:   3000,  Train Loss: 0.8851,  Train Acc: 63.2812%,  Val Loss: 0.9949,  Val Acc: 62.9612%,  Time: 0:02:58 
+100%|██████████| 307/307 [00:17<00:00, 17.50it/s]
+Epoch [11/200]
+  9%|▉         | 29/307 [00:01<00:13, 20.05it/s]
+Iter:   3100,  Train Loss: 0.893,  Train Acc: 67.1875%,  Val Loss: 1.024,  Val Acc: 61.7476%,  Time: 0:03:03 
+ 43%|████▎     | 132/307 [00:07<00:14, 12.19it/s]
+Iter:   3200,  Train Loss: 0.918,  Train Acc: 65.6250%,  Val Loss: 0.9852,  Val Acc: 62.9612%,  Time: 0:03:09 
+ 75%|███████▌  | 231/307 [00:12<00:06, 12.00it/s]
+Iter:   3300,  Train Loss: 0.9526,  Train Acc: 60.9375%,  Val Loss: 0.9872,  Val Acc: 62.6214%,  Time: 0:03:14 
+100%|██████████| 307/307 [00:16<00:00, 18.87it/s]
+  0%|          | 0/307 [00:00<?, ?it/s]Epoch [12/200]
+  7%|▋         | 23/307 [00:01<00:14, 20.05it/s]
+Iter:   3400,  Train Loss: 0.8907,  Train Acc: 68.7500%,  Val Loss: 0.9475,  Val Acc: 65.9709%,  Time: 0:03:21 *
+ 40%|████      | 124/307 [00:09<00:47,  3.85it/s]
+Iter:   3500,  Train Loss: 0.9219,  Train Acc: 64.8438%,  Val Loss: 0.927,  Val Acc: 65.6311%,  Time: 0:03:27 *
+ 73%|███████▎  | 223/307 [00:14<00:04, 19.65it/s]
+Iter:   3600,  Train Loss: 0.8518,  Train Acc: 69.5312%,  Val Loss: 0.9602,  Val Acc: 63.2524%,  Time: 0:03:33 
+100%|██████████| 307/307 [00:19<00:00, 16.11it/s]
+Epoch [13/200]
+  6%|▌         | 18/307 [00:01<00:23, 12.16it/s]
+Iter:   3700,  Train Loss:  0.69,  Train Acc: 77.3438%,  Val Loss: 0.9609,  Val Acc: 64.5631%,  Time: 0:03:38 
+ 38%|███▊      | 117/307 [00:06<00:15, 12.21it/s]
+Iter:   3800,  Train Loss: 0.7665,  Train Acc: 71.0938%,  Val Loss: 0.9492,  Val Acc: 65.9223%,  Time: 0:03:43 
+ 70%|███████   | 216/307 [00:11<00:04, 19.72it/s]
+Iter:   3900,  Train Loss: 0.821,  Train Acc: 74.2188%,  Val Loss: 0.9266,  Val Acc: 66.6990%,  Time: 0:03:50 *
+100%|██████████| 307/307 [00:17<00:00, 17.43it/s]
+Epoch [14/200]
+  3%|▎         | 10/307 [00:02<01:28,  3.34it/s]
+Iter:   4000,  Train Loss: 0.7749,  Train Acc: 72.6562%,  Val Loss: 0.9203,  Val Acc: 67.0874%,  Time: 0:03:57 *
+ 35%|███▌      | 108/307 [00:07<00:09, 20.11it/s]
+Iter:   4100,  Train Loss: 0.7618,  Train Acc: 70.3125%,  Val Loss: 0.8791,  Val Acc: 68.7379%,  Time: 0:04:03 *
+ 68%|██████▊   | 210/307 [00:14<00:07, 12.52it/s]
+Iter:   4200,  Train Loss: 0.7915,  Train Acc: 70.3125%,  Val Loss: 0.8941,  Val Acc: 68.4951%,  Time: 0:04:08 
+100%|██████████| 307/307 [00:18<00:00, 16.28it/s]
+  0%|          | 0/307 [00:00<?, ?it/s]Epoch [15/200]
+
+Iter:   4300,  Train Loss: 0.7615,  Train Acc: 78.9062%,  Val Loss: 0.8649,  Val Acc: 68.7379%,  Time: 0:04:15 *
+ 33%|███▎      | 101/307 [00:06<00:10, 20.10it/s]
+Iter:   4400,  Train Loss: 0.7939,  Train Acc: 70.3125%,  Val Loss: 0.8768,  Val Acc: 69.0291%,  Time: 0:04:20 
+ 66%|██████▌   | 202/307 [00:12<00:05, 19.96it/s]
+Iter:   4500,  Train Loss: 0.7974,  Train Acc: 68.7500%,  Val Loss: 0.875,  Val Acc: 69.2233%,  Time: 0:04:26 
+ 99%|█████████▊| 303/307 [00:17<00:00, 11.90it/s]
+Iter:   4600,  Train Loss: 0.7684,  Train Acc: 66.4062%,  Val Loss: 0.9443,  Val Acc: 64.9515%,  Time: 0:04:31 
+100%|██████████| 307/307 [00:17<00:00, 17.19it/s]
+  0%|          | 0/307 [00:00<?, ?it/s]Epoch [16/200]
+ 32%|███▏      | 97/307 [00:05<00:20, 10.48it/s]
+Iter:   4700,  Train Loss: 0.7251,  Train Acc: 75.0000%,  Val Loss: 0.911,  Val Acc: 66.6019%,  Time: 0:04:36 
+ 64%|██████▍   | 196/307 [00:10<00:09, 11.75it/s]
+Iter:   4800,  Train Loss: 0.7333,  Train Acc: 66.4062%,  Val Loss: 0.9045,  Val Acc: 67.3301%,  Time: 0:04:42 
+ 96%|█████████▋| 296/307 [00:15<00:00, 12.21it/s]
+Iter:   4900,  Train Loss: 0.8244,  Train Acc: 70.3125%,  Val Loss: 0.8668,  Val Acc: 69.1262%,  Time: 0:04:47 
+100%|██████████| 307/307 [00:16<00:00, 18.80it/s]
+  0%|          | 0/307 [00:00<?, ?it/s]Epoch [17/200]
+ 29%|██▉       | 89/307 [00:06<00:55,  3.96it/s]
+Iter:   5000,  Train Loss: 0.7746,  Train Acc: 68.7500%,  Val Loss: 0.8366,  Val Acc: 69.7573%,  Time: 0:04:54 *
+ 61%|██████    | 188/307 [00:11<00:05, 19.88it/s]
+Iter:   5100,  Train Loss: 0.7423,  Train Acc: 74.2188%,  Val Loss: 0.8785,  Val Acc: 68.8350%,  Time: 0:04:59 
+ 94%|█████████▍| 289/307 [00:16<00:01, 11.60it/s]
+Iter:   5200,  Train Loss: 0.6939,  Train Acc: 75.7812%,  Val Loss: 0.8762,  Val Acc: 68.4951%,  Time: 0:05:04 
+100%|██████████| 307/307 [00:17<00:00, 17.48it/s]
+  0%|          | 0/307 [00:00<?, ?it/s]Epoch [18/200]
+ 26%|██▋       | 81/307 [00:04<00:11, 20.02it/s]
+Iter:   5300,  Train Loss: 0.6493,  Train Acc: 78.9062%,  Val Loss: 0.8438,  Val Acc: 70.3398%,  Time: 0:05:09 
+ 59%|█████▉    | 182/307 [00:11<00:29,  4.25it/s]
+Iter:   5400,  Train Loss: 0.7772,  Train Acc: 69.5312%,  Val Loss: 0.8227,  Val Acc: 71.1165%,  Time: 0:05:16 *
+ 92%|█████████▏| 282/307 [00:16<00:02, 12.06it/s]
+Iter:   5500,  Train Loss: 0.6689,  Train Acc: 78.9062%,  Val Loss: 0.8564,  Val Acc: 69.6602%,  Time: 0:05:21 
+100%|██████████| 307/307 [00:17<00:00, 17.45it/s]
+  0%|          | 0/307 [00:00<?, ?it/s]Epoch [19/200]
+ 24%|██▍       | 74/307 [00:03<00:11, 19.96it/s]
+Iter:   5600,  Train Loss: 0.7565,  Train Acc: 74.2188%,  Val Loss: 0.8351,  Val Acc: 69.7087%,  Time: 0:05:27 
+ 57%|█████▋    | 175/307 [00:09<00:11, 11.82it/s]
+Iter:   5700,  Train Loss: 0.6405,  Train Acc: 80.4688%,  Val Loss: 0.8443,  Val Acc: 70.1456%,  Time: 0:05:32 
+ 90%|████████▉ | 275/307 [00:16<00:07,  4.51it/s]
+Iter:   5800,  Train Loss: 0.6744,  Train Acc: 75.0000%,  Val Loss: 0.8227,  Val Acc: 71.1165%,  Time: 0:05:39 *
+100%|██████████| 307/307 [00:17<00:00, 17.44it/s]
+  0%|          | 0/307 [00:00<?, ?it/s]Epoch [20/200]
+ 22%|██▏       | 67/307 [00:03<00:12, 19.71it/s]
+Iter:   5900,  Train Loss: 0.6425,  Train Acc: 75.7812%,  Val Loss: 0.8175,  Val Acc: 71.4078%,  Time: 0:05:45 *
+ 55%|█████▍    | 168/307 [00:10<00:11, 11.92it/s]
+Iter:   6000,  Train Loss: 0.6302,  Train Acc: 77.3438%,  Val Loss: 0.8403,  Val Acc: 70.0000%,  Time: 0:05:51 
+ 87%|████████▋ | 268/307 [00:15<00:03, 12.00it/s]
+Iter:   6100,  Train Loss: 0.5956,  Train Acc: 82.0312%,  Val Loss: 0.8481,  Val Acc: 69.4660%,  Time: 0:05:56 
+100%|██████████| 307/307 [00:17<00:00, 17.32it/s]
+  0%|          | 0/307 [00:00<?, ?it/s]Epoch [21/200]
+ 20%|█▉        | 60/307 [00:03<00:12, 19.62it/s]
+Iter:   6200,  Train Loss: 0.6842,  Train Acc: 75.7812%,  Val Loss: 0.8297,  Val Acc: 70.5825%,  Time: 0:06:01 
+ 52%|█████▏    | 161/307 [00:08<00:12, 11.87it/s]
+Iter:   6300,  Train Loss:  0.73,  Train Acc: 75.0000%,  Val Loss: 0.8239,  Val Acc: 70.8252%,  Time: 0:06:07 
+ 85%|████████▌ | 261/307 [00:13<00:03, 11.58it/s]
+Iter:   6400,  Train Loss: 0.6504,  Train Acc: 79.6875%,  Val Loss: 0.8578,  Val Acc: 69.2233%,  Time: 0:06:12 
+100%|██████████| 307/307 [00:16<00:00, 18.87it/s]
+Epoch [22/200]
+ 18%|█▊        | 54/307 [00:03<00:22, 11.45it/s]
+Iter:   6500,  Train Loss: 0.6978,  Train Acc: 78.1250%,  Val Loss: 0.8297,  Val Acc: 70.4854%,  Time: 0:06:17 
+ 50%|█████     | 154/307 [00:09<00:33,  4.52it/s]
+Iter:   6600,  Train Loss: 0.6473,  Train Acc: 74.2188%,  Val Loss: 0.815,  Val Acc: 71.1165%,  Time: 0:06:24 *
+ 82%|████████▏ | 253/307 [00:14<00:02, 19.96it/s]
+Iter:   6700,  Train Loss: 0.7621,  Train Acc: 73.4375%,  Val Loss: 0.8065,  Val Acc: 71.6505%,  Time: 0:06:31 *
+100%|██████████| 307/307 [00:18<00:00, 16.20it/s]
+  0%|          | 0/307 [00:00<?, ?it/s]Epoch [23/200]
+ 15%|█▌        | 47/307 [00:02<00:21, 12.25it/s]
+Iter:   6800,  Train Loss: 0.6299,  Train Acc: 78.1250%,  Val Loss: 0.8215,  Val Acc: 70.6796%,  Time: 0:06:36 
+ 48%|████▊     | 147/307 [00:07<00:13, 12.29it/s]
+Iter:   6900,  Train Loss: 0.5999,  Train Acc: 80.4688%,  Val Loss: 0.8147,  Val Acc: 71.3107%,  Time: 0:06:41 
+ 80%|████████  | 246/307 [00:12<00:03, 19.89it/s]
+Iter:   7000,  Train Loss: 0.5276,  Train Acc: 81.2500%,  Val Loss: 0.7911,  Val Acc: 72.4272%,  Time: 0:06:48 *
+100%|██████████| 307/307 [00:17<00:00, 17.35it/s]
+  0%|          | 0/307 [00:00<?, ?it/s]Epoch [24/200]
+ 13%|█▎        | 40/307 [00:02<00:23, 11.48it/s]
+Iter:   7100,  Train Loss: 0.6636,  Train Acc: 75.7812%,  Val Loss: 0.7923,  Val Acc: 72.0388%,  Time: 0:06:53 
+ 46%|████▌     | 140/307 [00:07<00:14, 11.38it/s]
+Iter:   7200,  Train Loss: 0.6047,  Train Acc: 80.4688%,  Val Loss: 0.807,  Val Acc: 71.7476%,  Time: 0:06:59 
+ 78%|███████▊  | 240/307 [00:12<00:05, 11.94it/s]
+Iter:   7300,  Train Loss: 0.5831,  Train Acc: 76.5625%,  Val Loss: 0.7974,  Val Acc: 71.9417%,  Time: 0:07:04 
+100%|██████████| 307/307 [00:16<00:00, 18.83it/s]
+  0%|          | 0/307 [00:00<?, ?it/s]Epoch [25/200]
+ 11%|█         | 33/307 [00:01<00:23, 11.47it/s]
+Iter:   7400,  Train Loss: 0.7522,  Train Acc: 71.8750%,  Val Loss: 0.8062,  Val Acc: 71.4563%,  Time: 0:07:09 
+ 43%|████▎     | 133/307 [00:07<00:14, 11.82it/s]
+Iter:   7500,  Train Loss: 0.6108,  Train Acc: 81.2500%,  Val Loss: 0.7966,  Val Acc: 71.8932%,  Time: 0:07:14 
+ 76%|███████▌  | 233/307 [00:12<00:06, 11.52it/s]
+Iter:   7600,  Train Loss: 0.6724,  Train Acc: 78.1250%,  Val Loss: 0.8087,  Val Acc: 70.7767%,  Time: 0:07:20 
+100%|██████████| 307/307 [00:16<00:00, 18.85it/s]
+  0%|          | 0/307 [00:00<?, ?it/s]Epoch [26/200]
+  8%|▊         | 25/307 [00:01<00:14, 19.94it/s]
+Iter:   7700,  Train Loss: 0.6043,  Train Acc: 81.2500%,  Val Loss: 0.802,  Val Acc: 71.6505%,  Time: 0:07:25 
+ 41%|████      | 126/307 [00:08<00:42,  4.28it/s]
+Iter:   7800,  Train Loss: 0.6557,  Train Acc: 75.7812%,  Val Loss: 0.7882,  Val Acc: 72.4757%,  Time: 0:07:32 *
+ 73%|███████▎  | 225/307 [00:13<00:04, 19.84it/s]
+Iter:   7900,  Train Loss: 0.7487,  Train Acc: 71.8750%,  Val Loss: 0.7826,  Val Acc: 72.5243%,  Time: 0:07:39 *
+100%|██████████| 307/307 [00:19<00:00, 16.08it/s]
+  0%|          | 0/307 [00:00<?, ?it/s]Epoch [27/200]
+  6%|▌         | 19/307 [00:01<00:26, 10.98it/s]
+Iter:   8000,  Train Loss: 0.7307,  Train Acc: 71.0938%,  Val Loss: 0.7865,  Val Acc: 72.5728%,  Time: 0:07:44 
+ 39%|███▉      | 119/307 [00:08<00:47,  3.97it/s]
+Iter:   8100,  Train Loss: 0.6184,  Train Acc: 77.3438%,  Val Loss: 0.7695,  Val Acc: 73.2524%,  Time: 0:07:51 *
+ 71%|███████   | 218/307 [00:13<00:04, 19.68it/s]
+Iter:   8200,  Train Loss: 0.6711,  Train Acc: 75.0000%,  Val Loss: 0.7644,  Val Acc: 73.3495%,  Time: 0:07:58 *
+100%|██████████| 307/307 [00:19<00:00, 15.83it/s]
+  0%|          | 0/307 [00:00<?, ?it/s]Epoch [28/200]
+  3%|▎         | 10/307 [00:00<00:14, 20.30it/s]
+Iter:   8300,  Train Loss: 0.5498,  Train Acc: 80.4688%,  Val Loss: 0.7828,  Val Acc: 72.8641%,  Time: 0:08:03 
+ 36%|███▌      | 111/307 [00:05<00:09, 19.78it/s]
+Iter:   8400,  Train Loss: 0.6459,  Train Acc: 76.5625%,  Val Loss: 0.773,  Val Acc: 73.1553%,  Time: 0:08:08 
+ 69%|██████▊   | 211/307 [00:11<00:04, 20.13it/s]
+Iter:   8500,  Train Loss: 0.673,  Train Acc: 78.1250%,  Val Loss: 0.7654,  Val Acc: 73.3495%,  Time: 0:08:14 
+100%|██████████| 307/307 [00:16<00:00, 18.89it/s]
+  0%|          | 0/307 [00:00<?, ?it/s]Epoch [29/200]
+  1%|          | 3/307 [00:00<00:14, 20.41it/s]
+Iter:   8600,  Train Loss: 0.5398,  Train Acc: 83.5938%,  Val Loss: 0.7995,  Val Acc: 71.6019%,  Time: 0:08:19 
+ 34%|███▍      | 105/307 [00:05<00:17, 11.68it/s]
+Iter:   8700,  Train Loss: 0.6294,  Train Acc: 76.5625%,  Val Loss: 0.7805,  Val Acc: 72.9126%,  Time: 0:08:24 
+ 67%|██████▋   | 205/307 [00:11<00:09, 11.33it/s]
+Iter:   8800,  Train Loss: 0.5896,  Train Acc: 81.2500%,  Val Loss: 0.7864,  Val Acc: 72.6214%,  Time: 0:08:29 
+100%|█████████▉| 306/307 [00:16<00:00, 12.00it/s]
+Iter:   8900,  Train Loss: 0.7975,  Train Acc: 70.3125%,  Val Loss: 0.807,  Val Acc: 71.7961%,  Time: 0:08:35 
+100%|██████████| 307/307 [00:16<00:00, 18.54it/s]
+  0%|          | 0/307 [00:00<?, ?it/s]Epoch [30/200]
+ 32%|███▏      | 98/307 [00:05<00:17, 12.16it/s]
+Iter:   9000,  Train Loss: 0.6161,  Train Acc: 78.9062%,  Val Loss: 0.7805,  Val Acc: 72.7670%,  Time: 0:08:40 
+ 64%|██████▍   | 198/307 [00:10<00:09, 11.77it/s]
+Iter:   9100,  Train Loss: 0.6056,  Train Acc: 78.9062%,  Val Loss: 0.7961,  Val Acc: 72.1359%,  Time: 0:08:45 
+ 97%|█████████▋| 297/307 [00:15<00:00, 18.74it/s]
+
+Iter:   9200,  Train Loss: 0.6187,  Train Acc: 78.9062%,  Val Loss: 0.7832,  Val Acc: 72.3786%,  Time: 0:08:51 
+No optimization for a long time, auto-stopping...
+Test Loss:  0.72,  Test Acc: 73.57%
+Precision, Recall and F1-Score...
+              precision    recall  f1-score   support
+
+        一般不满     0.4788    0.8229    0.6054        96
+        比较不满     0.6614    0.6070    0.6330       486
+   非常不满-渠道敏感     0.8987    0.8308    0.8634      1206
+   非常不满-费用敏感     0.3537    0.5370    0.4265       108
+   非常不满-服务敏感     0.4826    0.5000    0.4911       166
+
+    accuracy                         0.7357      2062
+   macro avg     0.5750    0.6596    0.6039      2062
+weighted avg     0.7612    0.7357    0.7443      2062
+
+Confusion Matrix...
+[[  79    9    2    2    4]
+ [  50  295   65   48   28]
+ [  18   92 1002   44   50]
+ [   4   21   18   58    7]
+ [  14   29   28   12   83]]
+Time usage: 0:00:00
+
+Process finished with exit code 0
